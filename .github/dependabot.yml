@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "12:00"
+  ignore:
+  - dependency-name: hosted-git-info
+    versions:
+    - 3.0.7
+    - 3.0.8
+    - 4.0.0
+    - 4.0.1
+  - dependency-name: nock
+    versions:
+    - 13.0.6
+    - 13.0.7
+    - 13.0.9
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
